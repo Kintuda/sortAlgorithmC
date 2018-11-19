@@ -13,7 +13,7 @@ void selectionSort(int *array, int max){
 	for(int i = 0;i < max -1; i++){
 		int indexInicial = i;
 		for(int j = i+1; j < max;j++){
-			if(array[j] < array[indexInicial]){
+			if(array[j] >  array[indexInicial]){
 				indexInicial = j;
 			}
 		}

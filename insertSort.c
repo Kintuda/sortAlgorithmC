@@ -6,7 +6,7 @@ void insertSort(int *array, int max){
 	for(int i = 0;i < max;i++){
 		int valorInicial = array[i];
 		int posicao = i-1;
-		while(posicao >= 0 && array[posicao] > valorInicial){
+		while(posicao >= 0 && array[posicao] < valorInicial){
 			array[posicao+1] = array[posicao];
 			--posicao;
 		} 
